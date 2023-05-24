@@ -1,12 +1,11 @@
-import { Home, About } from "./tutorial/05-leverage-javascript/starter/Pages";
+import Example from "./tutorial/05-leverage-javascript/starter/Example";
 
 
 function App() {
 
   return (
     <div className="container">
-        <Home />
-        <About />
+        <Example />
     </div>
   );
 }
