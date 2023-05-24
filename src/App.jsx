@@ -1,10 +1,13 @@
+import Starter from './tutorial/01-useState/starter/01-error-example';
+// import Final from './tutorial/01-useState/final/01-error-example';
+
 function App() {
 
   return (
-    <div>
-        <h2>advanced react</h2>
+    <div className="container">
+        <Starter />
     </div>
-  )
+  );
 }
 
 export default App
