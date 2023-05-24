@@ -12,6 +12,8 @@ const MultipleReturnsFetchData = () => {
         const res = await fetch(url);
         if(!res.ok) {
           setIsError(true);
+          setIsLoading(false);
+          return;
         }
         const data = await res.json();
         setUser(data);
