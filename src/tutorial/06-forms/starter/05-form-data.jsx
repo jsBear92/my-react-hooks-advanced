@@ -5,6 +5,22 @@ const UncontrolledInputs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    // console.log(formData);
+    // const name = formData.get('name');
+    // const email = formData.get('email');
+    // const password = formData.get('password');
+    // console.log([...formData.entries()]);
+
+    // make object structure
+    const newUser = Object.fromEntries(formData);
+    console.log(newUser);
+    setValue((prevValue) => {
+      const newValue = prevValue + 1;
+      console.log(newValue);
+      return newValue;
+    });
+    e.currentTarget.reset();
   };
   return (
     <div>
